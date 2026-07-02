@@ -6,7 +6,11 @@ git add .
 
 # every time you commit
 git commit -m "first commit"
-
 git branch -M main
 git remote add origin https://github.com/nafisasraboni/Programming-Hero.git
 git push -u origin main
+
+#all time commit korar jonno
+git add .
+git commit -m "meaningfull message"
+git push
