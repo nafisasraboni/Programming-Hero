@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced selectors</title>
+    <style>
+        /* tag selector */
+        tag{}
+        /*class selector*/
+        .classname{}
+        /*id selector*/
+        #id{}
+        /*universal*/
+        *{  }
+
+        h2,ol,ul{
+            background-color: lightblue;
+        }
+        .red{
+            color: brown;
+        }
+        .bold{
+            font-weight: 900;
+        }
+        .red.bold{
+            font-size: 1.5rem;
+        }
+        /*article er moddhe r paragrapgh er jonno*/
+        article > p{
+            color:blue; 
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>iuuuuuuuuu</p>
+        <div>
+            <p>This is bullshit</p>
+        </div>
+    </article>
+    <h2>mewwwwwww</h2>
+    <p>hiiiiiiiiiiiiii</p>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li class="red bold">item 3</li>
+        <li class="bold">item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+
+    </ol>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+
+    </ul>
+    
+</body>
+</html>
