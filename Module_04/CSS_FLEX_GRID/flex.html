@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display</title>
+
+    <style>
+        .container{
+
+        }
+
+        .box{
+            border: 2px solid blueviolet;
+            height: 100px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- div>p -->
+    <!-- div>article*3>section*2>h2 -->
+    <!-- div>article*3>section>h2+p*2 -->
+
+
+    <!-- .container>h2.header#first -->
+    <div class="container">
+        <h2 class="header" id="first"></h2>
+    </div>
+    
+    <!-- ul.container>li.item*5{item -$} -->
+    <ul class="container">
+        <li class="item">item -1</li>
+        <li class="item">item -2</li>
+        <li class="item">item -3</li>
+        <li class="item">item -4</li>
+        <li class="item">item -5</li>
+    </ul>
+
+    <!-- .container>.box*5{box - $} -->
+    <div class="container">
+        <div class="box">box - 1</div>
+        <div class="box">box - 2</div>
+        <div class="box">box - 3</div>
+        <div class="box">box - 4</div>
+        <div class="box">box - 5</div>
+    </div>
+
+
+    <div>
+        <article>
+            <section>
+                <h2>Flex Item 1</h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2></h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2></h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2></h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+    </div>    
+</body>
+</html>
