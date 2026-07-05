@@ -1,17 +1,20 @@
 nav ul {
-    display: flex; 
+    display: flex;
+     /*1 line e anar jonno element gulo*/
     list-style: none;
+    /* . dot gulo soranor jonno */
 }
-
-nav ul li {
+nav ul li{
     margin-right: 10px;
-    padding: 0 8px;
+    padding: 0 10px;
 }
 
 nav ul li:hover{
-    background-color: rgb(183, 233, 233);
+    background-color: rgb(198, 141, 141);
+    /* color effect deoar jonno click korar age jeta ase */
 }
 
 nav ul li a{
     text-decoration: none;
+    /* underline soranor jonno link theke */
 }
