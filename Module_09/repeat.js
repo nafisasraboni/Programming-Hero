@@ -1,0 +1,11 @@
+//in general repeated way
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
+console.log("Show me something")
