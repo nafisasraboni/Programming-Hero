@@ -3,37 +3,37 @@
 let marks = [45, 78, 90, 32, 67, 90, 21, 78, 55];
 
 //1
-console.log("Mark: ",marks);
+console.log("Mark: ", marks);
 
 //2
-for(let m of marks){
-    if(m>=40){
-        console.log("You are passed. You got: ",m)
+for (let m of marks) {
+    if (m >= 40) {
+        console.log("You are passed. You got: ", m)
     }
 }
 
 //3
 let failed = [];
-for(let m of marks){
-    if(m<40){
+for (let m of marks) {
+    if (m < 40) {
         failed.push(m)
     }
 }
-console.log("Total failed : ",failed.length);
+console.log("Total failed : ", failed.length);
 
 //4 & 5
-let highest=marks[0];
-let lowest=marks[0];
-for(let i=0;i<marks.length;i++){
-    if(marks[i]<lowest){
-        lowest=marks[i];
+let highest = marks[0];
+let lowest = marks[0];
+for (let i = 0; i < marks.length; i++) {
+    if (marks[i] < lowest) {
+        lowest = marks[i];
     }
-    if(marks[i]>highest){
-        highest=marks[i];
+    if (marks[i] > highest) {
+        highest = marks[i];
     }
 }
-console.log("Lowest mark: ",lowest);
-console.log("Highest mark: ",highest);
+console.log("Lowest mark: ", lowest);
+console.log("Highest mark: ", highest);
 
 //6
 console.log(marks.includes(100));
@@ -51,8 +51,8 @@ marks.push(65);
 console.log(marks);
 
 //10
-for(let m of marks){
-    if(m>70){
+for (let m of marks) {
+    if (m > 70) {
         console.log(m);
     }
 }
@@ -70,9 +70,9 @@ const sorted = allMarks.sort();
 console.log(sorted);
 
 //14
-let five = allMarks.slice(0,5);
+let five = allMarks.slice(0, 5);
 console.log(five);
 
 //15
-let cut = allMarks.splice(11,2);
+let cut = allMarks.splice(11, 2);
 console.log(cut);
