@@ -12,4 +12,4 @@ function ev(array) {
     return evenNum;
 }
 const evenNumbers = ev(numbers);
-console.log("returnning the even numbers:",evenNumbers)
+console.log("returnning the even numbers:",evenNumbers);
