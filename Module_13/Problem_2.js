@@ -2,20 +2,21 @@
 
 
 //without function
-let Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let range = 30;
 let sum = 0;
 
-// for (let num of Numbers) {
-//     sum += num;
+// for (let i = 0; i <= range; i++) {
+//     sum += i;
 // }
 // console.log(sum);
 
+
 //with function
-function sumOfRange(array) {
-    for (let num of Numbers) {
-        sum += num;
+ function sumOfRange(array) {
+     for(let i=0; i<=range; i++){
+       sum += i;
     }
     return sum;
-}
-const finalSum = sumOfRange(Numbers);
-console.log(finalSum);
+ }
+ const finalSum = sumOfRange(range);
+ console.log(finalSum);
