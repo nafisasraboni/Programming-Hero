@@ -1,6 +1,5 @@
 // Problem 15: Return All Even Numbers, Then Their Sum
 
-
 //without function
 let array = [6, 8, 3, 5, 23, 24, 54, 21, 4];
 let EvenNum = [];
