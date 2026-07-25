@@ -57,7 +57,7 @@ for(let key in student){
     console.log(key, ":" ,student[key])
 }
 
-console.log(keyLength.length);
-console.log(keyLength.includes("email"))
+console.log("Total Properties: ",keyLength.length);
+console.log("Has Email: ",keyLength.includes("email"))
 
 
