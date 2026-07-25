@@ -1,14 +1,11 @@
 const numbers = [12, 87, 14, 51, 36, 46];
 let evenNum = [];
-let oddNum = [];
 
 function ev(array) {
     for (let num of numbers) {
         console.log(num);
         if (num % 2 === 0) {
             evenNum.push(num);
-        } else {
-            oddNum.push(num);
         }
     }
     console.log(evenNum);
