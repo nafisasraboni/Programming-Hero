@@ -6,7 +6,7 @@ let value = 7;
 let number1 = [];
 
 // for (let n of number){
-//     if(n<=7){
+//     if(n<=value){
 //         continue;
 //     }else{
 //         number1.push(n);
@@ -15,9 +15,9 @@ let number1 = [];
 // console.log(number1);
 
 //with function
-function filter(num) {
+function filter(num,value) {
     for (let n of number) {
-        if (n <= 7) {
+        if (n <= value) {
             continue;
         } else {
             number1.push(n);
@@ -25,5 +25,5 @@ function filter(num) {
     }
     return(number1);
 }
-const finalFilter = filter(number);
+const finalFilter = filter(number,value);
 console.log(finalFilter)
