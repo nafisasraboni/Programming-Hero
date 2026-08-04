@@ -27,3 +27,4 @@ console.log(resturantBill(900));
 console.log(flowerBill(356));
 console.log(teaBill(234));
 console.log(resturantBill(200));
+
