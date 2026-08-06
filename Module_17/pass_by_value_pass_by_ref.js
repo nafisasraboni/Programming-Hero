@@ -1,6 +1,9 @@
 let name = "Nafisa";
 
-function myName(){
-    return(name)
+function myName(myname){
+    myname = "Sraboni"
+    return(myname)
 }
 console.log(myName(name))
+
+//console.log(name)
