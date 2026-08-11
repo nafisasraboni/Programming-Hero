@@ -7,8 +7,8 @@
   userName, default age = 18 if missing
 */
 
-const responseExtractor = (object,age=18)=>{
-  let {user:{name:userName,age}} = object
-  return userName,age
+const responseExtractor = (object)=>{
+  let {user:{name:userName,age=18}} = object
+  return {userName,age}
 }
-console.log({ user: { name: "Rafi", age: 22 } })
+console.log(responseExtractor({ user: { name: "Rafi"} }))
