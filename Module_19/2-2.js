@@ -14,7 +14,7 @@
 */
 
 
-
+//visualize korle pai
 // Accumulator -> 0
 // Pen -> Accumulator =  0 + (20 * 3) = 60
 // Notebook -> Accumulator = 60 + (50 * 2)

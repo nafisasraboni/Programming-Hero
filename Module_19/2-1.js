@@ -14,9 +14,9 @@
     { id: 2, name: "Karim" }
 */
 
-const findUserById=(users, id1)=>{
+const findUserById=(users, id)=>{
     let singleUser = users.find(user=>{
-        return user.id === id1;  
+        return user.id === id;  
     })
     if(singleUser){
         return singleUser;
@@ -28,4 +28,4 @@ console.log(findUserById(users = [
       { id: 1, name: "Rafi" },
       { id: 2, name: "Karim" },
     ],
-    id1 = 2))
+    id = 2))
