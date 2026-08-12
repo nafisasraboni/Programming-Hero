@@ -1,12 +1,14 @@
 /* 1. Private Bank Balance 💰
 
-createBankAccount() নামে একটি function বানাও।
+Problem: Create a Bank Account Function
 
-শুরুতে balance হবে 1000
-Function থেকে একটি deposit() function return করবে
-প্রতিবার deposit(amount) call করলে balance-এর সাথে amount যোগ হবে
-Updated balance return করবে
-Balance কোনো global variable-এ রাখা যাবে না
+Create a function named createBankAccount().
+
+The initial balance should be 1000.
+The function should return a deposit() function.
+Every time deposit(amount) is called, the amount should be added to the balance.
+The updated balance should be returned after each deposit.
+The balance must not be stored in any global variable.
 
 Expected:
 
