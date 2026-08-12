@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display</title>
+     <link rel="stylesheet" href="styles/nav.css">
+
+    <style>
+        .container{
+            display: flex;
+            gap : 30px;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+
+        .box{
+            border: 2px solid blueviolet;
+            height: 100px;
+            font-size: 2rem;
+        }
+        div{
+            font-size: 2rem;
+        }
+
+        .user-container{
+            display:flex;
+            gap : 30px;
+            justify-content: space-around;
+        }
+
+        .user{
+            border: 3px solid brown;
+            height: 100px;
+        }
+
+        .user-mew{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .faltu{
+            border: 3px solid maroon;
+            font-size: 2rem;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+        <nav>
+        <ul>
+            <!-- <li><a href=""></a></li> -->
+             <li><a href="flex.html">Flex</a></li>
+             <li><a href="about.html">About us</a></li>
+             <li><a href="contact.html">contact us</a></li>
+             <li><a href="nav.html">nav</a></li>
+              <li><a href="banner.html">banner</a></li>
+
+        </ul>
+    <!-- div>p -->
+    <!-- div>article*3>section*2>h2 -->
+    <!-- div>article*3>section>h2+p*2 -->
+
+
+    <!-- .container>h2.header#first -->
+    <div class="container">
+        <h2 class="header" id="first"></h2>
+    </div>
+    
+    <!-- ul.container>li.item*5{item -$} -->
+    <ul class="Nope">
+        <li class="item">item -1</li>
+        <li class="item">item -2</li>
+        <li class="item">item -3</li>
+        <li class="item">item -4</li>
+        <li class="item">item -5</li>
+    </ul>
+
+    <!-- .container>.box*5{box - $} -->
+    <div class="container">
+        <div class="box">box - 1</div>
+        <div class="box">box - 2</div>
+        <div class="box">box - 3</div>
+        <div class="box">box - 4</div>
+        <div class="box">box - 5</div>
+    </div>
+     
+    <!-- .user-container>.user*5{user-$} -->
+    <div class="user-container">
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+    </div>
+
+    <!-- .user-mew>.faltu{faltu - $} -->
+     <div class="user-mew">
+        <div class="faltu">faltu - 1</div>
+        <div class="faltu">faltu - 2</div>
+        <div class="faltu">faltu - 3</div>
+        <div class="faltu">faltu - 4</div>
+        <div class="faltu">faltu - 5</div>
+        <div class="faltu">faltu - 6</div>
+        <div class="faltu">faltu - 7</div>
+        <div class="faltu">faltu - 8</div>
+        <div class="faltu">faltu - 9</div>
+        <div class="faltu">faltu - 10</div>
+        <div class="faltu">faltu - 11</div>
+        <div class="faltu">faltu - 12</div>
+        <div class="faltu">faltu - 13</div>
+        <div class="faltu">faltu - 14</div>
+        <div class="faltu">faltu - 15</div>
+        <div class="faltu">faltu - 16</div>
+        <div class="faltu">faltu - 17</div>
+        <div class="faltu">faltu - 18</div>
+        <div class="faltu">faltu - 19</div>
+        <div class="faltu">faltu - 20</div>
+     </div>
+
+
+
+
+
+    <div>
+        <article>
+            <section>
+                <h2>Flex Item 1</h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2></h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2></h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2></h2>
+            </section>
+            <section>
+                <h2></h2>
+            </section>
+        </article>
+    </div>    
+</body>
+</html>

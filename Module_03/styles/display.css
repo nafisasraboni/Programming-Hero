@@ -1,0 +1,18 @@
+article{
+    background-color: rgb(160, 131, 188);
+}
+h2{
+    text-align: center;
+}
+#hidekorbo{
+    display: none;
+    visibility: hidden;
+}
+span{
+    color: brown; /* inline*/
+    display:block; /* onno line e chole jabe*/ /* block*/
+    width: 250px;
+    height: 30px;
+    border: 2px solid red; /* inline-block*/
+
+}

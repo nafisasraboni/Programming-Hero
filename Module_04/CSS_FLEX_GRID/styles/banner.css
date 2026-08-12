@@ -1,0 +1,27 @@
+.banner{
+    display: flex;
+    background-color: rgb(147, 203, 221);
+    padding: 20px;
+}
+.banner-content{
+    flex: 1;
+/* kon part koto tuku jaiga nibe */
+    text-align: center;
+}
+.banner-picture{
+    flex: 1;
+
+}
+.banner-picture img{
+    width: 100%;
+}
+.banner-content button{
+    background-color: blueviolet;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.banner-content button:hover{
+    background-color: rgb(132, 119, 144);
+}
