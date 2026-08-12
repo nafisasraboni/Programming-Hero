@@ -19,18 +19,20 @@
     ]
 */
 
+// ekhane array spread kore lav nai...object er property er value jeno change 
+// na hoi sei jonno,,,array er moddher element spread kore nite hbe...jate original change na hoi.
 
 const previewDiscount = (cart) => {
-    let cart2 = [...cart]
     let discount = 10;
-  return cart2.map((item) => {
-    item.price = item.price - ((item.price * discount)/100); 
-    return item;
+  return cart.map((item) => {
+    let item1={...item}
+    item1.price = item1.price - ((item1.price * discount)/100); 
+    return item1;
   });
 };
-console.log(previewDiscount(
-    cart = [
+const cart =  [
       { name: "Pen", price: 100 },
       { name: "Bag", price: 500 },
     ]
-))
+console.log(previewDiscount(cart))
+console.log(cart)
