@@ -6,11 +6,11 @@ Output:
 Guest
  */
 const checkVariable = (variable = "Guest") => {
-    if (variable === undefined) {
+    if (typeof variable === undefined) {
         return `${variable}`;
     }
     else {
         return `${variable}`;
     }
 };
-console.log(checkVariable("undefined"));
+console.log(checkVariable(undefined));

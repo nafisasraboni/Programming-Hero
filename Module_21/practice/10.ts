@@ -6,7 +6,7 @@ Guest
  */
 
 const checkVariable = (variable:string|undefined = "Guest"):string=>{
-    if(variable===undefined){
+    if(typeof variable===undefined){
         return `${variable}`
     }else{
         return `${variable}`
