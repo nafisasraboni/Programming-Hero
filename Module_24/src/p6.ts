@@ -10,4 +10,4 @@ function canEdit(role:Role):boolean{
 console.log(canEdit("admin"));
 console.log(canEdit("editor"));
 console.log(canEdit("viewer"));
-console.log(canEdit("guest"));
+//console.log(canEdit("guest"));
