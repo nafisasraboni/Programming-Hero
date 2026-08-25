@@ -7,7 +7,7 @@ interface DeleteAction{
     sizeMB:number
 }
  
-function updateStorageUsage(currentUsageMB: number, action: UploadAction | DeleteAction): number {
+function updateStorageUsage(currentUsageMB: number, action: UploadAction | DeleteAction): number|undefined {
     let finalUseageMB = 0;
     if(action.type==="upload"){
         return finalUseageMB=currentUsageMB+action.sizeMB
