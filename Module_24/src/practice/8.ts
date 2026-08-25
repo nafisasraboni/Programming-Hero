@@ -11,7 +11,7 @@ interface SystemNotification
     actionUrl?: string
 }
 
-function renderNotification(notification: LikeNotification | SystemNotification):string{
+function renderNotification(notification: LikeNotification | SystemNotification):string|undefined{
     if(notification.type==="like"){
         return `${notification.fromUser} liked your post`
     }else if(notification.type==="system"){
