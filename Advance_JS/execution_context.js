@@ -1,7 +1,5 @@
 let a=10;
 
-
-
 function one(){
     //let a = 60; // creation phase hoina let,const er jonno
     var a = 50; //creation phase : var a; initialize or declare holo
