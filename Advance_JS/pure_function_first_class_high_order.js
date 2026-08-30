@@ -61,3 +61,23 @@ function outerFunc(){
     innerFunc();
 }
 outerFunc();
+
+
+
+// Higher order function rules:
+// 1. We can pass a function as an argument
+// 2.We can return function from another function
+
+function myFunc (a,b){
+    return a+b;
+}
+function myFunc2(a,b,c,d,myFunc){
+    return function(){
+        let sum = myFunc(a,b)
+        let multiply = sum*c*d
+        return multiply;
+    }
+}
+let total = myFunc2(5,9,54,67,myFunc)
+console.log(total())
+
