@@ -7,23 +7,23 @@
 
 
 // pure function
-// function myFunc (a,b){
-//     return a+b;
-// }
-// console.log(myFunc(5,6))
-// console.log(myFunc(5,6))
-// console.log(myFunc(5,6))
-// console.log(myFunc(5,6))
+function myFunc (a,b){
+    return a+b;
+}
+console.log(myFunc(5,6))
+console.log(myFunc(5,6))
+console.log(myFunc(5,6))
+console.log(myFunc(5,6))
 
-// //impure function => change hocche
-// let sum=0;
-// function myFunction (num){
-//     return sum+=num
-// }
-// console.log(myFunction(8))
-// console.log(myFunction(8))
-// console.log(myFunction(8))
-// console.log(myFunction(8))
+//impure function => change hocche
+let sum=0;
+function myFunction (num){
+    return sum+=num
+}
+console.log(myFunction(8))
+console.log(myFunction(8))
+console.log(myFunction(8))
+console.log(myFunction(8))
 
 
 // first class function rules:
