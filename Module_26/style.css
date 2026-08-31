@@ -1,7 +1,7 @@
 .test {
     width: 100%;
     background-color: rgb(120, 31, 31);
-    font-size: 120px; 
+    font-size: 60px; 
     font-weight: bold;
     color: rgb(0, 0, 53);
 }
@@ -9,7 +9,7 @@
 @media (max-width: 800px) {
     .test {
         background-color: rgb(188, 107, 107);
-        font-size: 80px;
+        font-size: 30px;
         color: rgb(0, 0, 0);
     }
 }
