@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,102 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1 class="text-red-800">Hello,Tailwind!!</h1>
-    <h1 class="text-blue-800">Fuck OFF!!</h1>
+    <!-- arbitary value -->
+    <h1 class="text-[#0080ff77] text-[200px]">Hello,Tailwind!!</h1>
+    <!-- tailwind fixed value -->
+    <h1 class="text-black-800 bg-[url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809')] bg-center bg-cover h-375">Fuck OFF!!</h1>
+
+    <h3 class="text-5xl font-bold border-4 border-amber-700 bg-blue-200 rounded-3xl" >Programming Hero</h3>
+
 </body>
-</html> -->
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              // Defining a custom "primary" blue to use easily
-              primary: "#2563eb", // tailwind's blue-600
-              "primary-dark": "#1d4ed8", // tailwind's blue-700
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
-    <!-- PRODUCT CARD CONTAINER -->
-    <div
-      class="w-full max-w-sm bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden group"
-    >
-      <!-- PRODUCT IMAGE & BADGE -->
-      <div class="relative overflow-hidden aspect-[4/3]">
-        <img
-          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop"
-          alt="Red Running Shoe"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <!-- Blue Badge/Tag -->
-        <span
-          class="absolute top-3 right-3 bg-blue-100 text-primary text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm"
-        >
-          New Arrival
-        </span>
-      </div>
-
-      <!-- PRODUCT DETAILS CONTENT -->
-      <div class="p-6 space-y-4">
-        <!-- Brand and Rating -->
-        <div class="flex items-center justify-between text-sm">
-          <span class="font-medium text-gray-500 uppercase tracking-tight">
-            Nike Air
-          </span>
-          <div class="flex items-center text-yellow-400">
-            <!-- 5 Star Rating -->
-            <svg
-              class="w-4 h-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-              ></path>
-            </svg>
-            <!-- ...repeat svg 4 more times for full rating... -->
-            <span class="text-gray-600 ml-1.5 font-medium">(4.9)</span>
-          </div>
-        </div>
-
-        <!-- Product Title -->
-        <h3 class="text-xl font-bold text-gray-900 leading-tight">
-          Air Zoom Pegasus 40
-        </h3>
-
-        <!-- Description -->
-        <p class="text-gray-600 text-sm leading-relaxed line-clamp-2">
-          Experience the iconic responsiveness and cushioned comfort in the newest
-          evolution. Perfect for your daily runs, offering a smooth transition
-          and secure fit.
-        </p>
-
-        <!-- Price and Action -->
-        <div class="flex items-center justify-between pt-2">
-          <!-- Blue Price Tag -->
-          <div class="flex items-baseline space-x-1.5">
-            <span class="text-3xl font-extrabold text-primary">$130.00</span>
-            <span class="text-sm text-gray-400 line-through">$160.00</span>
-          </div>
-
-          <!-- Blue Call-to-Action Button -->
-          <button
-            class="bg-primary hover:bg-primary-dark text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-    </div>
-  </body>
 </html>
+
