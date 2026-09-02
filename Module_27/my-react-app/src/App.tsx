@@ -6,11 +6,11 @@ function App() {
       <h1>React</h1>
       {/* <Person></Person>
       <Gagets></Gagets> */}
-      {/* <Student></Student>
-      <Student></Student>
-      <Student></Student> */}
-      <Foodname></Foodname>
-      <Mathio></Mathio>
+      <Student name="Jamila" grade="3.63"></Student>
+      <Student name="Lamila" grade="3.73"></Student>
+      <Student name="Kamila" grade="3.83"></Student>
+      {/* <Foodname></Foodname>
+      <Mathio></Mathio> */}
     </>
   );
 }
@@ -32,7 +32,8 @@ function App() {
 //   )
 // }
 
-// function Student(){
+function Student(props){
+  console.log(props)
 
 //   // const studentStyle = {
 //   //   border:'2px solid red',
@@ -40,17 +41,13 @@ function App() {
 //   //   margin:'10px'
 //   // }
 
-//   return(
-//     <div style={{
-//     border:'2px solid red',
-//     borderRadius:'10px',
-//     margin:'10px'
-//   }}>
-//     <h3>Name:</h3>
-//     <p>Grade</p>
-//   </div>
-//   )
-// }
+  return(
+    <div>
+    <h3>Name:{props.name}</h3>
+    <p>Grade:{props.grade}</p>
+  </div>
+  )
+}
 
 
 
