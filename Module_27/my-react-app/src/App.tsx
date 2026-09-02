@@ -32,13 +32,18 @@ function App() {
 
 function Student(){
 
-  const studentStyle = {
+  // const studentStyle = {
+  //   border:'2px solid red',
+  //   borderRadius:'10px',
+  //   margin:'10px'
+  // }
+  
+  return(
+    <div style={{
     border:'2px solid red',
     borderRadius:'10px',
     margin:'10px'
-  }
-  return(
-    <div style={studentStyle}>
+  }}>
     <h3>Name:</h3>
     <p>Grade</p>
   </div>
