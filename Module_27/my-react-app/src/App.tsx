@@ -5,7 +5,8 @@ function App() {
   return (
     <>
       <h1>React</h1>
-      <Todo task="Continue coding"></Todo>
+      <Todo task="Continue coding" time="2.00 PM"></Todo>
+      <Todo task="Tale bath" time="12.00 PM"></Todo>
       {/* <Person></Person>
       <Gagets></Gagets> */}
       {/* <Student name="Jamila" grade="3.63"></Student>
