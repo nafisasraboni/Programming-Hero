@@ -1,14 +1,16 @@
 import "./App.css";
+import Todo from "./todo.tsx"
 
 function App() {
   return (
     <>
       <h1>React</h1>
+      <Todo task="Continue coding"></Todo>
       {/* <Person></Person>
       <Gagets></Gagets> */}
-      <Student name="Jamila" grade="3.63"></Student>
+      {/* <Student name="Jamila" grade="3.63"></Student>
       <Student name="Lamila" grade="3.73"></Student>
-      <Student name="Kamila" grade="3.83"></Student>
+      <Student name="Kamila" grade="3.83"></Student> */}
       {/* <Foodname></Foodname>
       <Mathio></Mathio> */}
     </>
@@ -32,8 +34,8 @@ function App() {
 //   )
 // }
 
-function Student(props){
-  console.log(props)
+// function Student(props){
+//   console.log(props)
 
 //   // const studentStyle = {
 //   //   border:'2px solid red',
@@ -41,47 +43,45 @@ function Student(props){
 //   //   margin:'10px'
 //   // }
 
-  return(
-    <div>
-    <h3>Name:{props.name}</h3>
-    <p>Grade:{props.grade}</p>
-  </div>
-  )
-}
-
-
+//   return(
+//     <div>
+//     <h3>Name:{props.name}</h3>
+//     <p>Grade:{props.grade}</p>
+//   </div>
+//   )
+// }
 
 //practice
 
-function Mathio(){
-  const name="Moon"
-  return(
-    <>
-    <p>this is {name}</p>
-    <p>this is {name}'s age : {35-10+1}</p>
+// function Mathio(){
+//   const name="Moon"
+//   return(
+//     <>
+//     <p>this is {name}</p>
+//     <p>this is {name}'s age : {35-10+1}</p>
     
-    </>
-  )
-}
+//     </>
+//   )
+// }
 
-function Foodname(){
-  // const stylingFood={
-  //   border: '2px solid black',
-  //   borderRadius: '5px',
-  //   margin: '10px'
-  // }
-  return(
-    <div style={{
-    border: '2px solid black',
-    borderRadius: '5px',
-    margin: '10px'
-  }}>
-      <h2>Pasta</h2>
-      <h2>Pizza</h2>
-      <h2>Pulao</h2>
-      <h2>Biriyani</h2>
-    </div>
-  )
-}
+// function Foodname(){
+//   // const stylingFood={
+//   //   border: '2px solid black',
+//   //   borderRadius: '5px',
+//   //   margin: '10px'
+//   // }
+//   return(
+//     <div style={{
+//     border: '2px solid black',
+//     borderRadius: '5px',
+//     margin: '10px'
+//   }}>
+//       <h2>Pasta</h2>
+//       <h2>Pizza</h2>
+//       <h2>Pulao</h2>
+//       <h2>Biriyani</h2>
+//     </div>
+//   )
+// }
 
 export default App;
