@@ -24,7 +24,16 @@ interface TaskPropsType {
 
 //Conditional rendering( using ternary )
 
-function Task({ task, isDone }: TaskPropsType) {
-    return isDone===true ? <li>Completed : {task} </li> : <li>Pending : {task} </li>
-}
+// function Task({ task, isDone }: TaskPropsType) {
+//     return isDone===true ? <li>Completed : {task} </li> : <li>Pending : {task} </li>
+// }
+
+//Conditional rendering( using && , || )
+
+// function Task({ task, isDone }: TaskPropsType) {
+//   //    return isDone===true && <li>Completed : {task} </li>
+//   //    return isDone===false && <li>Pending : {task} </li>
+//   // return isDone===true || <li>Completed : {task} </li>
+//   // return isDone === false || <li>Pending : {task} </li>;
+// }
 

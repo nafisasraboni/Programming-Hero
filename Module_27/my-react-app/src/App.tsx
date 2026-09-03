@@ -7,6 +7,7 @@ function App() {
     <>
       <h1>React</h1>
       <Task task="Module Finish" isDone={true}></Task>
+      <Task task="Phone charged" isDone={true}></Task>
       <Task task="Fb scrolling" isDone={false}></Task>
       <Todo task="Continue coding" time="2.00 PM"></Todo>
       <Todo task="Tale bath" time="12.00 PM"></Todo>
