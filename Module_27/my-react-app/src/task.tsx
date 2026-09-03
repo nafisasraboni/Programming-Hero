@@ -37,3 +37,14 @@ interface TaskPropsType {
 //   // return isDone === false || <li>Pending : {task} </li>;
 // }
 
+//Conditional rendering using variable
+function Task({ task, isDone }: TaskPropsType) {
+    let list;
+    if(isDone===true){
+        list=<li>Done : {task}</li>
+    }else{
+        list=<li>Not Done : {task}</li>
+    }
+
+    return list;
+}
