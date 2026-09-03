@@ -3,6 +3,7 @@ import "./App.css";
 //import Task from "./task.tsx"
 import Book from "./book.tsx";
 import Footer from "./Footer.tsx";
+import Profile from "./ProfileCard.tsx";
 import User from "./user.tsx";
 import WelcomeCard from "./WelcomeCard.tsx";
 
@@ -26,6 +27,7 @@ function App() {
       <User></User>
       <WelcomeCard></WelcomeCard>
       <Footer></Footer>
+      <Profile name="Nafisa" age={23} favouriteHobby="Photography"></Profile>
 
 
       {/* <Task task="Module Finish" isDone={true}></Task>
