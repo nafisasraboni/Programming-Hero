@@ -3,6 +3,7 @@ import "./App.css";
 //import Task from "./task.tsx"
 import Book from "./book.tsx";
 import Footer from "./Footer.tsx";
+import Product from "./ProductCard.tsx";
 import Profile from "./ProfileCard.tsx";
 import User from "./user.tsx";
 import WelcomeCard from "./WelcomeCard.tsx";
@@ -28,6 +29,9 @@ function App() {
       <WelcomeCard></WelcomeCard>
       <Footer></Footer>
       <Profile name="Nafisa" age={23} favouriteHobby="Photography"></Profile>
+      <Product name="Laptop" price={55000} inStock={true}></Product>
+      <Product name="Desktop" price={75000} inStock={false}></Product>
+      <Product name="HeadPhone" price={5000} inStock={true}></Product>
 
 
       {/* <Task task="Module Finish" isDone={true}></Task>
