@@ -1,16 +1,30 @@
 import "./App.css";
-import Todo from "./todo.tsx"
-import Task from "./task.tsx"
+//import Todo from "./todo.tsx"
+//import Task from "./task.tsx"
+import Book from "./book.tsx";
 
 function App() {
+  const books = [
+    "Feluda",
+    "MisirAli",
+    "Bomkesh Boksi",
+    "Sharlok Homes",
+    "Detective Konan",
+  ];
+
   return (
     <>
       <h1>React</h1>
-      <Task task="Module Finish" isDone={true}></Task>
+
+      {books.map((book) => (
+        <Book name={book}></Book>
+      ))}
+
+      {/* <Task task="Module Finish" isDone={true}></Task>
       <Task task="Phone charged" isDone={true}></Task>
       <Task task="Fb scrolling" isDone={false}></Task>
       <Todo task="Continue coding" time="2.00 PM"></Todo>
-      <Todo task="Tale bath" time="12.00 PM"></Todo>
+      <Todo task="Tale bath" time="12.00 PM"></Todo> */}
       {/* <Person></Person>
       <Gagets></Gagets> */}
       {/* <Student name="Jamila" grade="3.63"></Student>
@@ -64,7 +78,7 @@ function App() {
 //     <>
 //     <p>this is {name}</p>
 //     <p>this is {name}'s age : {35-10+1}</p>
-    
+
 //     </>
 //   )
 // }
