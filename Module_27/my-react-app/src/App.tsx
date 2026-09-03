@@ -2,6 +2,7 @@ import "./App.css";
 //import Todo from "./todo.tsx"
 //import Task from "./task.tsx"
 import Book from "./book.tsx";
+import User from "./user.tsx";
 
 function App() {
   const books = [
@@ -19,6 +20,9 @@ function App() {
       {books.map((book) => (
         <Book name={book}></Book>
       ))}
+
+      <User></User>
+
 
       {/* <Task task="Module Finish" isDone={true}></Task>
       <Task task="Phone charged" isDone={true}></Task>
