@@ -2,7 +2,9 @@ import "./App.css";
 //import Todo from "./todo.tsx"
 //import Task from "./task.tsx"
 import Book from "./book.tsx";
+import Footer from "./Footer.tsx";
 import User from "./user.tsx";
+import WelcomeCard from "./WelcomeCard.tsx";
 
 function App() {
   const books = [
@@ -22,6 +24,8 @@ function App() {
       ))}
 
       <User></User>
+      <WelcomeCard></WelcomeCard>
+      <Footer></Footer>
 
 
       {/* <Task task="Module Finish" isDone={true}></Task>
