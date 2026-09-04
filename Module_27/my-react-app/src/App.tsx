@@ -2,9 +2,11 @@ import "./App.css";
 //import Todo from "./todo.tsx"
 //import Task from "./task.tsx"
 import Book from "./book.tsx";
+import Card from "./catchBug.tsx";
 import Footer from "./Footer.tsx";
 import Product from "./ProductCard.tsx";
 import Profile from "./ProfileCard.tsx";
+import StatusBadge from "./StatusBadge.tsx";
 import User from "./user.tsx";
 import WelcomeCard from "./WelcomeCard.tsx";
 
@@ -20,6 +22,8 @@ function App() {
   return (
     <>
       <h1>React</h1>
+      <Card title="My Card"></Card>
+      <StatusBadge isActive={true}></StatusBadge>
 
       {books.map((book) => (
         <Book name={book}></Book>
