@@ -1,13 +1,19 @@
-export default counter;
+import { useState } from "react";
 
-const [value,setValue]= useState(0);
+export default Counter;
 
-function counter(){
-    return(
-        <div>
-            <h2>Counter</h2>
-            <p>Current Value: </p>
-            <button>Increase</button>
-        </div>
-    )
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const handleIncreae = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h2>Counter</h2>
+      <p>Current Value: {count} </p>
+      <button onClick={handleIncreae}>Increase</button>
+    </div>
+  );
 }

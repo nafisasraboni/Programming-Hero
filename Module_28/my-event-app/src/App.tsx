@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./counter";
 import ShoppingCart from "./ShoppingCart";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+      <Counter></Counter>
       <ShoppingCart></ShoppingCart>
       {/* <button onClick={handleClick}>Click me</button>
       <button onClick={handleClick}>Click me</button>
