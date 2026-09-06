@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./counter";
+import CricketScore from "./cricketScore";
 import LikeButton from "./fbLikeButton";
 import ShoppingCart from "./ShoppingCart";
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <>
+      <CricketScore></CricketScore>
       <LikeButton></LikeButton>
       <Counter></Counter>
       <ShoppingCart></ShoppingCart>
