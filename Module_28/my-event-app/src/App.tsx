@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./counter";
+import LikeButton from "./fbLikeButton";
 import ShoppingCart from "./ShoppingCart";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <>
+      <LikeButton></LikeButton>
       <Counter></Counter>
       <ShoppingCart></ShoppingCart>
       {/* <button onClick={handleClick}>Click me</button>
