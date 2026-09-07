@@ -3,6 +3,7 @@
 // json.parse()
 
 import { use } from "react";
+import UserCard from "./userCard";
 
 //.json
 
@@ -28,12 +29,14 @@ import { use } from "react";
 
 export default Users;
 
-function Users({dataCall}){
-    const users=use(dataCall);
-    console.log(users)
-    return(
-        <div>
-            <h2>User:{users.length}</h2>
-        </div>
-    )
+function Users({ dataCall }) {
+  const users = use(dataCall);
+  console.log(users);
+  return (
+    <div>
+      <h2>User:{users.length}</h2>
+      {
+      users.map(user => <UserCard user={user}></UserCard>)}
+    </div>
+  );
 }
