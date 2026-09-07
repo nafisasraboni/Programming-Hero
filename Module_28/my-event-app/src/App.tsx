@@ -6,6 +6,9 @@ import LikeButton from "./fbLikeButton";
 import ShoppingCart from "./ShoppingCart";
 import Users from "./users";
 import Post from "./post";
+import Todos from "./todos";
+ 
+
 
 const dataCall = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -16,6 +19,13 @@ const dataCall = async () => {
 const postData = async()=>{
   const res=await fetch('https://jsonplaceholder.typicode.com/posts')
   const data = await res.json();
+  return data;
+}
+
+//step-1:create a promise
+const todos = async()=>{
+  const res=await fetch('https://jsonplaceholder.typicode.com/todos')
+  const data=await res.json();
   return data;
 }
 
@@ -40,6 +50,11 @@ function App() {
 
       <Suspense fallback={<p>"Loading poast data..."</p>}>
       <Post postData={postData()}></Post>
+      </Suspense>
+
+      {/* step 2 : create suspense */}
+      <Suspense fallback={<p>"Loading todos Data..."</p>}>
+      <Todos todos={todos()} ></Todos>
       </Suspense>
 
       <CricketScore></CricketScore>
