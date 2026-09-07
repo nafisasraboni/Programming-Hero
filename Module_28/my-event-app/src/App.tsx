@@ -1,8 +1,16 @@
+import { Suspense } from "react";
 import "./App.css";
 import Counter from "./counter";
 import CricketScore from "./cricketScore";
 import LikeButton from "./fbLikeButton";
 import ShoppingCart from "./ShoppingCart";
+import Users from "./users";
+
+const dataCall = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+  return data;
+};
 
 function App() {
   // function handleClick() {
@@ -19,6 +27,10 @@ function App() {
 
   return (
     <>
+      <Suspense fallback={<p>Loading...</p>}>
+        <Users dataCall={dataCall()}></Users>
+      </Suspense>
+
       <CricketScore></CricketScore>
       <LikeButton></LikeButton>
       <Counter></Counter>
