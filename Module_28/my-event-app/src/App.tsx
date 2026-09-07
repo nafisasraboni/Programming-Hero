@@ -5,12 +5,19 @@ import CricketScore from "./cricketScore";
 import LikeButton from "./fbLikeButton";
 import ShoppingCart from "./ShoppingCart";
 import Users from "./users";
+import Post from "./post";
 
 const dataCall = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
   return data;
 };
+
+const postData = async()=>{
+  const res=await fetch('https://jsonplaceholder.typicode.com/posts')
+  const data = await res.json();
+  return data;
+}
 
 function App() {
   // function handleClick() {
@@ -27,8 +34,12 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<p>Loading...</p>}>
+      {/* <Suspense fallback={<p>Loading...</p>}>
         <Users dataCall={dataCall()}></Users>
+      </Suspense> */}
+
+      <Suspense fallback={<p>"Loading poast data..."</p>}>
+      <Post postData={postData()}></Post>
       </Suspense>
 
       <CricketScore></CricketScore>
