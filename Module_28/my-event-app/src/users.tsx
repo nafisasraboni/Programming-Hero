@@ -2,6 +2,8 @@
 // json.stringify()
 // json.parse()
 
+import { use } from "react";
+
 //.json
 
 // // 2. data fetching || api call using callback pattern
@@ -26,10 +28,12 @@
 
 export default Users;
 
-function Users(){
+function Users({dataCall}){
+    const users=use(dataCall);
+    console.log(users)
     return(
         <div>
-            <h2>User:</h2>
+            <h2>User:{users.length}</h2>
         </div>
     )
 }
