@@ -1,25 +1,25 @@
-import { Suspense } from 'react';
-import './App.css'
-import CountryList from './components/CountryList/CountryList';
+import { Suspense } from "react";
+import "./App.css";
+import CountryList from "./components/CountryList/CountryList";
+import type { CountryType } from "./components/CountryList/type";
 
-const countries =async()=>{
-  const res = await fetch('https://openapi.programming-hero.com/api/all')
+const countries = async (): Promise<CountryType[]> => {
+  const res = await fetch("https://openapi.programming-hero.com/api/all");
   const data = await res.json();
-  return data;
-}
+  return data.countries;
+};
 
 function App() {
   return (
     <>
+      <div>
+        <h2>World on the go.</h2>
+      </div>
       <Suspense fallback={<p>Loading Countries...</p>}>
-      <CountryList countries={countries()}></CountryList>
+        <CountryList countries={countries()}></CountryList>
       </Suspense>
-        <div>
-          <h2>World on the go.</h2 >
-        </div>
-        
     </>
-  )
+  );
 }
 
-export default App
+export default App;
