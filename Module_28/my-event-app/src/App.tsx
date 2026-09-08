@@ -7,8 +7,13 @@ import ShoppingCart from "./ShoppingCart";
 import Users from "./users";
 import Post from "./post";
 import Todos from "./todos";
- 
+import Comment from "./comment";
 
+const promisee = async()=>{
+  const res=await fetch('https://jsonplaceholder.typicode.com/comments');
+  const data = await res.json();
+  return data;
+}
 
 const dataCall = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -44,18 +49,26 @@ function App() {
 
   return (
     <>
+     
+     <Suspense fallback={<p>Loading comments...</p>}>
+      <Comment promisee={promisee()}></Comment>
+     </Suspense>
+
+
+
+
       {/* <Suspense fallback={<p>Loading...</p>}>
         <Users dataCall={dataCall()}></Users>
       </Suspense> */}
 
-      <Suspense fallback={<p>"Loading poast data..."</p>}>
+      {/* <Suspense fallback={<p>"Loading poast data..."</p>}>
       <Post postData={postData()}></Post>
-      </Suspense>
+      </Suspense> */}
 
       {/* step 2 : create suspense */}
-      <Suspense fallback={<p>"Loading todos Data..."</p>}>
+      {/* <Suspense fallback={<p>"Loading todos Data..."</p>}>
       <Todos todos={todos()} ></Todos>
-      </Suspense>
+      </Suspense> */}
 
       <CricketScore></CricketScore>
       <LikeButton></LikeButton>
