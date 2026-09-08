@@ -1,5 +1,5 @@
 import  { use } from "react"
-import CountryCard from "../CountryCard/CountryCard";
+//import CountryCard from "./CountryCard";
 import type { CountryType } from "./type";
 
 export interface CountryListProps {
@@ -12,9 +12,9 @@ export default function CountryList({ countries }: CountryListProps) {
     return(
         <div>
             <h2>Country List</h2>
-            {/* {
-                countryNames.map(country=><CountryCard country={country}></CountryCard>)
-            } */}
+            {
+                countryNames.map(country=><li>{country.name.common}</li>)
+            }
         </div>
     )
 }

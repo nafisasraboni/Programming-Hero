@@ -40,8 +40,8 @@ export interface CountryType {
     },
     flags: {
         flags: {
-            png: "https://flagcdn.com/w320/jm.png",
-            svg: "https://flagcdn.com/jm.svg",
+            png: string,
+            svg: string,
             alt: string
         }
     }
