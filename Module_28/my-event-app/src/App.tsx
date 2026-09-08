@@ -4,10 +4,11 @@ import Counter from "./counter";
 import CricketScore from "./cricketScore";
 import LikeButton from "./fbLikeButton";
 import ShoppingCart from "./ShoppingCart";
-import Users from "./users";
-import Post from "./post";
-import Todos from "./todos";
+// import Users from "./users";
+// import Post from "./post";
+// import Todos from "./todos";
 import Comment from "./comment";
+import Albums from "./albums";
 
 const promisee = async()=>{
   const res=await fetch('https://jsonplaceholder.typicode.com/comments');
@@ -49,10 +50,13 @@ function App() {
 
   return (
     <>
+     <Albums></Albums>
      
      <Suspense fallback={<p>Loading comments...</p>}>
       <Comment promisee={promisee()}></Comment>
      </Suspense>
+
+     
 
 
 
