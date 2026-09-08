@@ -1,6 +1,7 @@
 import  { use } from "react"
 //import CountryCard from "./CountryCard";
-import type { CountryType } from "./type";
+import type { CountryType } from "../type";
+import Country from "../country/country";
 
 export interface CountryListProps {
     countries: Promise<CountryType[]>
@@ -13,7 +14,7 @@ export default function CountryList({ countries }: CountryListProps) {
         <div>
             <h2>Country List</h2>
             {
-                countryNames.map(country=><li>{country.name.common}</li>)
+                countryNames.map(country=><Country key={country.ccn3.ccn3} country={country}></Country>)
             }
         </div>
     )
