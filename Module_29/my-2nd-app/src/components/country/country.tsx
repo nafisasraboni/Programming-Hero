@@ -11,7 +11,12 @@ export default function Country({ country }: CountryProps) {
   const [visited, setVisited]=useState<boolean>(false);
 
   const handleVisited = () => {
-    setVisited(true);
+    // if(visited){
+    //     setVisited(false);
+    // }else{
+    //     setVisited(true);
+    // }
+    setVisited(!visited);
   };
 
   return (
