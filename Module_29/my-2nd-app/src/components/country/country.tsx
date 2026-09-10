@@ -4,11 +4,14 @@ import "./country.css";
 
 export interface CountryProps {
   country: CountryType;
+  handleVisitedCountries: (country: CountryType) => void;
 }
 
-export default function Country({ country }: CountryProps) {
-
-  const [visited, setVisited]=useState<boolean>(false);
+export default function Country({
+  country,
+  handleVisitedCountries,
+}: CountryProps) {
+  const [visited, setVisited] = useState<boolean>(false);
 
   const handleVisited = () => {
     // if(visited){
@@ -17,10 +20,11 @@ export default function Country({ country }: CountryProps) {
     //     setVisited(true);
     // }
     setVisited(!visited);
+    handleVisitedCountries(country)
   };
 
   return (
-    <div className={`country ${visited? 'country-visited': ''}`}>
+    <div className={`country ${visited ? "country-visited" : ""}`}>
       <h4>Official : {country.name.official}</h4>
       <h5>Capital : {country.capital.capital}</h5>
       <h5>Population : {country.population.population}</h5>
@@ -29,7 +33,7 @@ export default function Country({ country }: CountryProps) {
       <h5>ccn3 : {country.ccn3.ccn3}</h5>
       <img src={country.flags.flags.png} alt={country.flags.flags.alt} />
       <button onClick={handleVisited}>
-        {visited===true ? "Visited" : "Mark as read" }
+        {visited === true ? "Visited" : "Mark as read"}
       </button>
     </div>
   );
