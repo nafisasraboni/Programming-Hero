@@ -10,9 +10,10 @@ export interface CountryListProps {
 
 export default function CountryList({ countries }: CountryListProps) {
 
+    const countryNames = use(countries);
+
   const [visitedCountries,setVisitedCountries]=useState<CountryListProps[]>([])
 
-  const countryNames = use(countries);
 
   const handleVisitedCountries =(country:CountryListProps):void=>{
     const newVisitedCountries = [...visitedCountries,country]; 
