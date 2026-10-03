@@ -1,16 +1,21 @@
 "use client";
+
+import { Eye, EyeSlash } from "@gravity-ui/icons";
 import { signIn } from "@/lib/auth-client";
+import { useState } from "react";
 import {
   Button,
   Description,
   FieldError,
   Form,
   Input,
+  InputGroup,
   Label,
   TextField,
 } from "@heroui/react";
 
 const SignInPage = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -21,10 +26,10 @@ const SignInPage = () => {
       email: data.email,
       password: data.password,
       rememberMe: true,
-      callbackURL: '/',
+      callbackURL: "/",
     });
 
-    console.log('After submit', resData, error);
+    console.log("After submit", resData, error);
   };
   return (
     <div>
@@ -45,11 +50,12 @@ const SignInPage = () => {
           <Input placeholder="Enter Your Email" />
           <FieldError />
         </TextField>
+
         <TextField
+          className="w-full max-w-70"
+          name="password"
           isRequired
           minLength={8}
-          name="password"
-          type="password"
           validate={(value) => {
             if (value.length < 8) {
               return "Password must be at least 8 characters";
@@ -64,12 +70,34 @@ const SignInPage = () => {
           }}
         >
           <Label>Password</Label>
-          <Input placeholder="Enter your password" />
+          <InputGroup>
+            <InputGroup.Input
+              className="w-full max-w-70"
+              type={isVisible ? "text" : "password"}
+              placeholder="Enter your password"
+            />
+            <InputGroup.Suffix className="pe-0">
+              <Button
+                isIconOnly
+                aria-label={isVisible ? "Hide password" : "Show password"}
+                size="sm"
+                variant="ghost"
+                onPress={() => setIsVisible(!isVisible)}
+              >
+                {isVisible ? (
+                  <Eye className="size-4" />
+                ) : (
+                  <EyeSlash className="size-4" />
+                )}
+              </Button>
+            </InputGroup.Suffix>
+          </InputGroup>
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>
           <FieldError />
         </TextField>
+
         <div className="flex gap-2">
           <Button type="submit">
             {/* <Check /> */}
