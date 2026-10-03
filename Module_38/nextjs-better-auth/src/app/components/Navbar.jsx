@@ -1,9 +1,14 @@
 "use client";
 import { useState } from "react";
 import { Link, Button } from "@heroui/react";
+import { useSession } from "@/lib/auth-client";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { data: session } = useSession();
+
+  console.log("Session in Navbar", session);
 
   const links = (
     <>
@@ -21,7 +26,13 @@ export default function Navbar() {
     </>
   );
 
-  const authLinks = (
+  // এখানে ফ্র্যাগমেন্টের ভেতরে কন্ডিশনাল রেন্ডারিং সুন্দরভাবে সাজানো হয়েছে
+  const authLinks = session?.user ? (
+    <>
+      <span>Welcome, {session?.user.name}</span>
+      <button>Log Out</button>
+    </>
+  ) : (
     <>
       <Link href="#">Login</Link>
       <Button>Sign Up</Button>
