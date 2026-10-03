@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Link, Button } from "@heroui/react";
-import { useSession } from "@/lib/auth-client";
+import { signOut, useSession } from "@/lib/auth-client";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,16 +26,21 @@ export default function Navbar() {
     </>
   );
 
-  // এখানে ফ্র্যাগমেন্টের ভেতরে কন্ডিশনাল রেন্ডারিং সুন্দরভাবে সাজানো হয়েছে
   const authLinks = session?.user ? (
     <>
       <span>Welcome, {session?.user.name}</span>
-      <button>Log Out</button>
+      <Link href="/">
+        <Button onClick={() => signOut()}>Sign Out</Button>
+      </Link>
     </>
   ) : (
     <>
-      <Link href="#">Login</Link>
-      <Button>Sign Up</Button>
+      <Link href="/sign-in">
+        <Button>Sign In</Button>
+      </Link>
+      <Link href="/sign-up">
+        <Button>Sign Up</Button>
+      </Link>
     </>
   );
 
